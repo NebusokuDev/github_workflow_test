@@ -1,11 +1,10 @@
 name: helloworld
 
 on: 
-    workflow_dispatch
+    push
 
 jobs:
-    echo_hello:
+    echo_hello_world:
         runs-on: "ubuntu-latest"
-    steps:
-        - name: 挨拶
-        run: echo "hello world"
+        steps:
+            - run: echo "hello world"
