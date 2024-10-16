@@ -1,0 +1,9 @@
+name: check_python_version
+
+on: workflow_dispatch
+jobs:
+  check_python_version:
+    runs-on: "ubuntu-latest"
+    steps:
+      - run: python3 --version
+      
